@@ -24,7 +24,7 @@ while ((numberofguesses<3) and determine!="END"): #user has a maximum of 3 attem
             break #the loop exits if the user guesses correctly
     else: #If the value of determine is not a digit, then we verify if it is a string that ends the loop condition
         continue #We exit the loop, and strart all over again
-if numberofguesses<3: #checks if the user has not used up all attempts
+if numberofguesses<3 and determine=="END": #checks if the user has not used up all attempts
     print("Oh " + name+ " why did you quit? See you another time") #this informs the user why he/she quit
 else:
     if guess==number: #confirms that user's input equals random generated number
